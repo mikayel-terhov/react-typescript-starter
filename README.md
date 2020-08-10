@@ -1,10 +1,3 @@
-## TODO
-ADD ESLINT<br />
-ADD LAYOUTS<br />
-ADD BASIC PAGES<br />
-SETUP SERVER<br />
-SETUP CLIENT<br />
-SETUP DATA <br />
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

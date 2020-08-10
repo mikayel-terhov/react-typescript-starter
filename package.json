@@ -1,18 +1,44 @@
 {
-  "name": "template-react-typescript",
+  "name": "shop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "cra-template-typescript": "1.0.3",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/knex": "^0.16.1",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-redux": "^7.1.9",
+    "@types/redux": "^3.6.0",
+    "eslint": "^7.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "knex": "^0.21.3",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-redux": "^7.2.1",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "ts-loader": "^7.0.5",
+    "ts-node": "^8.10.2",
+    "typescript": "~3.7.2",
+    "uuid": "^8.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "migrate": "npx knex migrate:latest",
+    "dev:create-database": "npx ts-node ./scripts/create-database.ts",
+    "migrate:seed": "npx knex seed:run",
+    "migrate:rollback": "npx knex migrate:rollback"
   },
   "eslintConfig": {
     "extends": "react-app"

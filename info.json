@@ -1,0 +1,9 @@
+{
+  "name": "shop",
+  "apiUrl": "https://localhost:3000",
+  "clientUrl": "http://localhost:8000",
+  "devApiPort": 3000,
+  "devClientPort": 8080,
+  "devStreamingDomain": null,
+  "devStreamingPort": null
+}
